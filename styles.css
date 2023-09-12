@@ -1,0 +1,379 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+    height:100vh;
+    overflow:auto;
+    
+  }
+  
+  
+  * {
+    /* Here we set the margin and padding 0 */
+    margin: 0;
+    
+      padding: 0;
+    }
+    
+     /* CSS for header navigation bar */
+    header {
+      background-color: white;
+      padding: 10px;
+    }
+    
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .left-nav {
+      display: flex;
+      align-items: center;
+      margin-left: -400px;
+    }
+
+    .right-nav {
+      display: flex;
+      align-items: center;
+    }
+  
+    .nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+    }
+    
+    .nav-list li {
+      margin-right: 10px; /* Add some spacing between list items */
+      padding: 26px 30px;
+      font-size: 18px;
+    }
+    .nav-list li a {
+      text-decoration: none;
+      color:rgba(128, 128, 128, 0.856);
+      
+    }
+
+    /* CSS for logo of website */
+    .logo {
+      width: 100px;
+      height: 40px;
+      width: 170px;
+    }
+    
+  /* CSS for main image */
+    .image1{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      height:30%;
+      width:100%;
+      ;
+    }
+
+    /* CSS for the text and login inside the picture */
+    .container{
+      position: relative;
+      text-align: center;
+    }
+    .font1{
+      font-size: 30px;
+    }
+    .font2{
+      font-size: 18px;
+    }
+    .text{
+       
+       color: white;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       
+       
+        
+      }
+
+      .text.login{
+        size: 50%;
+        font-size: large;
+        margin-top: 5%;
+        color:white;
+      }
+      .btn-style{
+        background-color: rgba(0, 102, 255, 0.904);
+        width:4.5rem;
+        height:2.5rem;
+        color: white;
+        cursor: pointer;
+      }
+
+      /* CSS for 1st row of images */
+
+      .column img{
+      width:400px;
+      height:250px;
+      }
+      .row{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:center;
+        gap:8px;
+        }
+
+       /* CSS for 2nd row of images */
+    
+      
+      /* .col img{
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        height: 100px;
+        width: 240px;
+      }
+      .caption figcaption{
+        text-align: center;
+        font-size: large;
+        color: rgba(14, 13, 13, 0.74);
+      }
+      .capt figcaption{
+        text-align: center;
+        font-size:small;
+        color: rgba(14, 13, 13, 0.74);
+      } */
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 8px;
+        margin-left:40px;
+        margin-right: auto;
+      }
+      
+      .col img {
+        display: grid;
+        max-width: 100%;
+        height: auto;
+        margin-left:40px;
+        object-fit: cover;
+        grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+      align-items: center;
+    
+      }
+      
+      .caption figcaption,
+      .capt figcaption {
+        display: grid;
+        text-align:center;
+        grid-column: 2 / 3;
+        font-size: large;
+        color: rgba(14, 13, 13, 0.74);
+        grid-auto-flow: column;
+      grid-auto-columns: 1fr;
+      align-items: center;
+      }
+      
+
+      /* CSS for 3rd column of pictures */
+
+      .benefits{
+        text-align: center;
+         font-size:x-large ;
+          height: 10%; 
+          margin-top: 60px;
+        color: rgba(14, 13, 13, 0.74);
+      }
+      .feature{
+        text-align: center;
+         font-size:x-large ;
+          height: 10%; 
+          margin-top: 60px;
+        color: rgba(14, 13, 13, 0.74);
+      }
+     .extra{
+      text-align: center;
+       font-size: small;
+        height: 10%;
+         margin-top: 40px;
+         color: rgba(14, 13, 13, 0.74);
+     }
+     .vertical{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction:column;
+      justify-content:center;
+      
+     }
+     .horizontal{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction:row;
+      justify-content:center;
+      
+     }
+     .benpics img{
+      width:100px;
+      height: 100px;
+      margin-right: auto;
+        margin-left: auto;
+        display: block;
+     }
+     .bencaption{
+      margin-left: 10px;
+      margin-top: 10px;
+     }
+     .bentext{
+      color: rgba(14, 13, 13, 0.74);
+      
+    }
+
+    /* CSS for ClipMine Video Collection */
+
+    .video{
+      text-align: center;
+      font-size:large ;
+      
+    }
+    .video1{
+      text-align: center;
+      font-size:small ;
+      
+    }
+    .vid{
+      height:180px;
+      width:560px;
+      padding:25px;
+    }
+
+    /* CSS for media partners */
+
+    .med{
+      height:150px;
+      width: 300px;
+      padding: 20px;
+    }
+
+    /* CSS for supporetd platforms */
+
+    .forms{
+      height:60px;
+      width:120px;
+      padding:40px;
+    }
+
+    /* CSS for input tag */
+
+    .inputcss{
+      display: flex;  
+      justify-content: center; 
+      align-items: flex-start;      
+      height: 100px;
+      padding: 20px;
+    }
+
+    /* CSS for footers */
+
+    .f1{
+      text-align: center;
+      padding: 4px;
+      background-color:rgba(0, 0, 0, 0.774);
+      height: 20px;
+     
+    }
+    .f2{
+      text-align: center;
+      padding: 4px;
+      background-color:rgb(0, 0, 0);
+      height: 20px;
+      
+    }
+   
+    /* for side bar menu */
+
+    .nav{
+      border-bottom:1px solid #EAEEEB;
+      text-align:right;
+      height:0px;
+      
+      }
+    .menu{
+    margin:0px 30px 0px 0px;
+    position: fixed;
+    top: 3;
+    right: -200px; 
+    height: 400px;
+    background-color: #f3f0f0;
+    transition: right 0.3s;
+    z-index: 1;
+    border-radius: 5px;
+    }
+    
+    .menu a{
+      clear:right;
+      text-decoration:none;
+      color:grey;
+      line-height:60px;
+      display: none;
+    }
+    
+    
+    label{
+      margin:0px 40px 0px 0px;
+      font-size:26px;
+      margin-top:-50px;
+      display:none;
+      width:26px;
+      float:right;
+    }
+    #toggle{
+      display:none;
+    }
+    
+    @media only screen and (max-width:500px){
+      .right-nav,
+        .left-nav {
+          display: none;
+        }
+    
+      label{
+        display:block;
+        cursor:pointer;
+      }
+      .menu{
+        width:100%;
+        text-align:center;
+        display:none;
+      }
+      
+      .menu a{
+        display:block;
+        margin-right:80px;
+      }
+      
+      #toggle:checked+.menu{
+        display:block;
+      }
+      .bentext{
+        text-align: center;
+      }
+      .font1{
+        font-size: 11px;
+      }
+      .font2{
+        font-size: 9px;;
+      }
+      .btn-style{
+        width: 3rem;
+        height: 1.5rem;
+      }
+      
+    }
+    
+  
+    
+    

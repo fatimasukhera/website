@@ -1,0 +1,182 @@
+header {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-nav {
+    display: flex;
+    align-items: center;
+    margin-left: -400px;
+  }
+
+  .right-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list li {
+    margin-right: 10px; /* Add some spacing between list items */
+    padding: 26px 30px;
+    font-size: 18px;
+  }
+  .nav-list li a {
+    text-decoration: none;
+    color:rgba(128, 128, 128, 0.856);
+    
+  }
+
+/*
+  .menu-toggle {
+    font-size: 24px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    display: none;
+    color: #0e0d0d;
+  }
+
+  .sidebar {
+    
+    position: fixed;
+    top: 3;
+    right: -200px; /* Hide the sidebar off-screen initially 
+    width: 120px;
+    height: 250px;
+    background-color: #f3f0f0;
+    transition: right 0.3s;
+    z-index: 1;
+  }
+
+  .sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  
+  .sidebar-list li a {
+    text-decoration: none;
+    color: #333;
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+
+  .sidebar-list li a:hover {
+    background-color: #b3a9a9;
+  }
+
+ 
+ /*
+  #menu-toggle-checkbox:not(:checked)+.sidebar {
+    display: none;
+  }
+  */
+
+  /* Responsive Styling 
+  @media screen and (max-width: 768px) {
+    .right-nav,
+    .left-nav {
+      display: none;
+    }
+    .sidebar:target {
+      right: 0;
+    }
+
+    .menu-toggle {
+      display: block;
+    }
+   
+    #menu-toggle-checkbox:checked+.sidebar-list li a {
+      display: block;
+    }
+
+    /* Position the sidebar to the right edge when checked 
+    #menu-toggle-checkbox:checked+.sidebar {
+      right: 0;
+    }
+    .sidebar-list li a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+      padding: 10px;
+      border-radius: 2px;
+      transition: background-color 0.2s;
+    }
+  } 
+*/
+
+.nav{
+  border-bottom:1px solid #EAEEEB;
+  text-align:right;
+  height:70px;
+  line-height:70px;
+  }
+.menu{
+margin:0px 30px 0px 0px;
+}
+
+.menu a{
+  clear:right;
+  text-decoration:none;
+  color:grey;
+  margin:0px 10px;
+  line-height:70px;
+  display: none;
+}
+
+
+label{
+  margin:0px 40px 0px 0px;
+  font-size:26px;
+  margin-top:-70px;
+  display:none;
+  width:26px;
+  float:right;
+}
+#toggle{
+  display:none;
+}
+
+@media only screen and (max-width:500px){
+  .right-nav,
+    .left-nav {
+      display: none;
+    }
+
+  label{
+    display:block;
+    cursor:pointer;
+  }
+  .menu{
+    width:100%;
+    text-align:center;
+    display:none;
+  }
+  
+  .menu a{
+    display:block;
+    border:1px solid #f1f5f2;
+    margin:0px;
+  }
+  
+  #toggle:checked+.menu{
+    display:block;
+  }
+}

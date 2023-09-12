@@ -1,0 +1,30 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+    
+  }
+  
+  .col img {
+    display: grid;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  align-items: center;
+
+  }
+  
+  .caption figcaption,
+  .capt figcaption {
+    display: grid;
+    text-align:center;
+    grid-column: 2 / 3;
+    font-size: large;
+    color: rgba(14, 13, 13, 0.74);
+    grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  align-items: center;
+  }
+  
